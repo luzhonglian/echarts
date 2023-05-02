@@ -69,3 +69,5 @@ BUG 原因:lib-flexible 的 flexible.js 中有以下代码：
     }, 301);
   });
 ```
+
+(https://raw.githubusercontent.com/luzhonglian/echarts-/main/src/assets/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA.png)
