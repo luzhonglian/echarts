@@ -60,7 +60,7 @@ BUG 原因:lib-flexible 的 flexible.js 中有以下代码：
 ```
 
 窗口 resize0.3s 后才触发 rem 的更新，推测是 echarts 的 resize 功能与其不可完美兼容 <br><br>
-解决方案：监听 window 的 resize 事件，设置定时器，超过 0.3srem 更新后触发图例的 resize
+解决方案：监听 window 的 resize 事件，设置定时器，超过0.3s rem更新后触发图例的resize 事件
 
 ```
   window.addEventListener("resize", () => {
