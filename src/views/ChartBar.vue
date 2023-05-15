@@ -18,7 +18,7 @@ var t
 var data = ref();
 
 let getBarData = async () => {
-  let barData = await axios({ url: "/path/bar" });
+  let barData = await axios({ url: "https://www.fastmock.site/mock/e110368ed1b120b7fc940533513ab460/api/bar" });
   data.value = barData.data.bar;
   // console.log(data.value);
 };

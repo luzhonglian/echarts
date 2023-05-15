@@ -15,7 +15,7 @@ let data = reactive({});
 var t
 
 async function getStackbarData() {
-  data = await axios.get("/path/stackbar").then((res) => {
+  data = await axios.get("https://www.fastmock.site/mock/e110368ed1b120b7fc940533513ab460/api/stackbar").then((res) => {
     return res.data.chartData;
   });
 }

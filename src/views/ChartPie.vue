@@ -12,7 +12,7 @@ let myPie = ref();
 let data = reactive({});
 var t
 async function getPieData() {
-  data = await axios.get("/path/pie").then((res) => {
+  data = await axios.get("https://www.fastmock.site/mock/e110368ed1b120b7fc940533513ab460/api/pie").then((res) => {
     return res.data.chartData;
   });
   // console.log(data)

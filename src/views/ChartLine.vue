@@ -20,7 +20,7 @@ function setData() {
 }
 
 async function getLineData() {
-  data = await axios.get("/path/line").then((res) => {
+  data = await axios.get("https://www.fastmock.site/mock/e110368ed1b120b7fc940533513ab460/api/line").then((res) => {
     return res.data.chartData;
   });
   //   console.log(data)
