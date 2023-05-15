@@ -2,13 +2,15 @@
 
 ## 目录
 
+- [项目在线展示](#show)
 - [关于](#about)
 - [项目运行准备](#getting_started)
 - [项目运行](#usage)
 - [自适应的实现](#resize)
 - [开发中遇到的 bug 以及解决方案](#bug)
-- [项目展示](#show)
 
+## 项目在线展示 <a name = "show"></a>
+https://luzhonglian.github.io/echarts/
 ## 关于 <a name = "about"></a>
 
 Vite+Vue3.2+setup 语法糖编写 <br>
@@ -70,5 +72,5 @@ BUG 原因:lib-flexible 的 flexible.js 中有以下代码：
     }, 301);
   });
 ```
-## 项目展示 <a name = "show"></a>
-![项目展示](https://raw.githubusercontent.com/luzhonglian/echarts-/main/src/assets/%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA.png)
+
+
