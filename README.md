@@ -20,23 +20,11 @@ Vite+Vue3.2+setup 语法糖编写 <br>
 
 ### 安装 node 和 npm
 
-### 安装以下依赖
-
-```
-{
-    "axios": "^1.3.6",
-    "echarts": "^5.4.2",
-    "less": "^4.1.3",
-    "lib-flexible": "^0.3.2",
-    "sass": "^1.62.1",
-    "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
-  },
-```
 
 ## 项目运行 <a name = "usage"></a>
 
 ```
+npm install
 npm run dev
 ```
 
@@ -61,7 +49,7 @@ BUG 原因:lib-flexible 的 flexible.js 中有以下代码：
     }, true);
 ```
 
-窗口 resize0.3s 后才触发 rem 的更新，推测是 echarts 的 resize 功能与其不可完美兼容 <br><br>
+窗口 resize0.3s 后才触发 rem 的更新，在rem更新前echart图表的resize是无效的 <br><br>
 解决方案：监听 window 的 resize 事件，设置定时器，超过0.3s rem更新后触发图例的resize 事件
 
 ```
